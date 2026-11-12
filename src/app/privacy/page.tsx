@@ -30,7 +30,7 @@ const sections: LegalSection[] = [
       "Your name, phone number, WhatsApp profile and, if you give it, your email address and country.",
       "Details of your situation and what you hope to change, in your own words.",
       "Information needed for the work, which may include your date of birth, the names and dates of birth of people involved, and photographs you choose to send.",
-      "Records of our conversations, quotes and payments.",
+      "Records of our conversations, quotes and payments. Listening Ear calls are not recorded.",
     ],
   },
   {

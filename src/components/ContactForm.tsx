@@ -42,6 +42,7 @@ export default function ContactForm() {
             {categories.map((c) => (
               <option key={c.slug} value={c.name}>{c.name}</option>
             ))}
+            <option value="A Listening Ear (someone to talk to)">A Listening Ear (someone to talk to)</option>
             <option value="Something else">Something else</option>
           </select>
         </label>

@@ -29,6 +29,11 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/listening" className="text-gold hover:text-gold-bright">
+                A Listening Ear
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="md:col-span-2">

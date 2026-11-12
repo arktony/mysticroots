@@ -10,6 +10,7 @@ import FaqList from "@/components/FaqList";
 import CtaBand from "@/components/CtaBand";
 import { WhatsAppIcon } from "@/components/Footer";
 import HeroBackdrop from "@/components/HeroBackdrop";
+import ListeningCard from "@/components/ListeningCard";
 import { categories, featuredSpells } from "@/lib/spells";
 import { testimonials } from "@/lib/content";
 import { site, whatsappLink } from "@/lib/site";
@@ -75,6 +76,8 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      <ListeningCard />
 
       {/* About strip */}
       <section className="py-12">

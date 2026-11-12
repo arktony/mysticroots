@@ -28,3 +28,5 @@ book-candle: photo-1697029749544-ffa7f15f9dd0
 old-books: photo-1623857248151-96b25902a2f4
 herbs-mortar: photo-1492552085122-36706c238263
 herbs-bowls: photo-1704597435621-ff7026f124fa
+listening-window: photo-1638674678884-95744f968012
+listening-cup: photo-1538549435176-632e689a1e4a
