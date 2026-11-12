@@ -5,7 +5,7 @@ export const site = {
   shortName: "Mystic Roots",
   tagline: "Ancient spell casting, rooted in tradition.",
   description:
-    "Mystic Roots Healing offers traditional spell casting for love, protection, prosperity and success. Private consultations, distance casting worldwide.",
+    "Mystic Roots Healing offers traditional spell casting and healing for love, family, protection, money, justice, education and success. Private consultations, distance casting worldwide.",
   url: "https://mysticrootshealing.org",
   caster: {
     name: "Elder Mafosa",

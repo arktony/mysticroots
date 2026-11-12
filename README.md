@@ -15,7 +15,7 @@ Open http://localhost:3000.
 ## Where things live
 
 - `src/lib/site.ts`: name, caster persona, contact details, nav. **Replace the placeholder values here before launch.**
-- `src/lib/spells.ts`: the four spell categories and the sixteen spell pages.
+- `src/lib/spells.ts`: the eight service categories and the thirty-two service pages.
 - `src/lib/content.ts`: how-it-works steps, FAQ, sample testimonials, blog posts.
 - `src/app/`: routes. Spell pages are generated from the data files.
 - `public/images/`: photography from Unsplash (free to use under the Unsplash License).

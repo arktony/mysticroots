@@ -64,9 +64,9 @@ export default function Home() {
       <section className="py-24">
         <Container>
           <SectionHeading
-            eyebrow="Four paths"
+            eyebrow="Eight paths"
             title={<>Every casting begins with <em className="gold-text not-italic">your</em> need.</>}
-            text="Choose the path closest to what you are facing. Each one holds castings shaped by generations of practice."
+            text="From love and family to justice, education and healing. Choose the path closest to what you are facing."
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((c) => (

@@ -17,8 +17,8 @@ export default function SpellsPage() {
     <>
       <PageHero
         eyebrow="The spells"
-        title="Four paths. Sixteen castings. One honest conversation to begin."
-        text="Every casting below is prepared for one person and one situation. Start with the path closest to what you need."
+        title="Eight paths. One honest conversation to begin."
+        text="Love, family, protection, money, justice, education, success and healing. Every service below is prepared for one person and one situation."
         image="/images/candles-glow.jpg"
       />
       <Container>

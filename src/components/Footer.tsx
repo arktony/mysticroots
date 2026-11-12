@@ -20,7 +20,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="md:col-span-3">
-          <h4 className="eyebrow mb-5">Spells</h4>
+          <h4 className="eyebrow mb-5">Spells & Healing</h4>
           <ul className="space-y-3 text-sm">
             {categories.map((c) => (
               <li key={c.slug}>

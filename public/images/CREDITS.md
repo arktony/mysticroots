@@ -20,3 +20,11 @@ incense-cones: photo-1762541115443-d83816da748c
 crystals-table: photo-1632980205460-e490e885e848
 altar-table: photo-1696521137592-ab8805dd68a5
 candles-glow: photo-1530043689697-bddc19df3c74
+family-hands: photo-1768657889783-842520da1619
+family-sunset: photo-1529180979161-06b8b6d6f2be
+children-hill: photo-1503847752244-32e931070a43
+gavel: photo-1769029265788-d7921a103403
+book-candle: photo-1697029749544-ffa7f15f9dd0
+old-books: photo-1623857248151-96b25902a2f4
+herbs-mortar: photo-1492552085122-36706c238263
+herbs-bowls: photo-1704597435621-ff7026f124fa
