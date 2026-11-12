@@ -29,14 +29,14 @@ export default function Header() {
     >
       <Container className="flex h-20 items-center justify-between">
         <Logo />
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center lg:flex lg:gap-5 xl:gap-8">
           {nav.map((item) => {
             const active = pathname === item.href || pathname.startsWith(item.href + "/");
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm tracking-wide transition-colors hover:text-gold-bright ${
+                className={`whitespace-nowrap text-[13px] tracking-wide transition-colors hover:text-gold-bright xl:text-sm ${
                   active ? "text-gold" : "text-ink-muted"
                 }`}
               >
@@ -46,8 +46,9 @@ export default function Header() {
           })}
         </nav>
         <div className="hidden lg:block">
-          <a href={whatsappLink()} target="_blank" rel="noopener" className="btn btn-gold">
-            Book a Consultation
+          <a href={whatsappLink()} target="_blank" rel="noopener" className="btn btn-gold lg:px-5 xl:px-6">
+            <span className="xl:hidden">Book Now</span>
+            <span className="hidden xl:inline">Book a Consultation</span>
           </a>
         </div>
         <button

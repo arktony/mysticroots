@@ -20,7 +20,7 @@ export default function Logo({ compact = false }: { compact?: boolean }) {
       </span>
       {!compact && (
         <span className="leading-tight">
-          <span className="font-display block text-xl font-semibold tracking-wide text-ink">
+          <span className="font-display block whitespace-nowrap text-xl font-semibold tracking-wide text-ink">
             {site.shortName}
           </span>
           <span className="eyebrow block text-[0.6rem] tracking-[0.3em]">Healing</span>
