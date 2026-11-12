@@ -14,10 +14,10 @@ export const site = {
     experienceYears: 20, // placeholder, use a truthful number
   },
   contact: {
-    whatsapp: "+256700000000", // placeholder, digits only with country code
-    whatsappDisplay: "+256 700 000 000",
-    phone: "+256700000000",
-    phoneDisplay: "+256 700 000 000",
+    whatsapp: "+256758587822",
+    whatsappDisplay: "+256 758 587 822",
+    phone: "+256758587822",
+    phoneDisplay: "+256 758 587 822",
     email: "clientcare@mysticrootshealing.org",
     hours: "Available 7 days a week, 8am to 10pm EAT",
   },
