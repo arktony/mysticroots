@@ -106,7 +106,9 @@ export default async function SpellPage({ params }: PageProps<"/spells/[category
       <section className="py-20">
         <Container>
           <div className="mb-10 flex items-end justify-between">
-            <h2 className="font-display text-4xl text-ink">More {c.name.toLowerCase()} castings</h2>
+            <h2 className="font-display text-4xl text-ink">
+              More {c.name.toLowerCase()} {c.slug === "healing" ? "services" : "castings"}
+            </h2>
             <Link href={`/spells/${c.slug}`} className="text-xs uppercase tracking-[0.2em] text-gold hover:text-gold-bright">
               View all →
             </Link>

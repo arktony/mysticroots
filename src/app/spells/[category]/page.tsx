@@ -18,7 +18,7 @@ export async function generateMetadata({
   const { category } = await params;
   const c = getCategory(category);
   if (!c) return {};
-  return { title: `${c.name} Spells`, description: c.description };
+  return { title: c.slug === "healing" ? c.name : `${c.name} Spells`, description: c.description };
 }
 
 export default async function CategoryPage({ params }: PageProps<"/spells/[category]">) {

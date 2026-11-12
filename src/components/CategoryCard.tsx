@@ -21,7 +21,7 @@ export default function CategoryCard({ category }: { category: Category }) {
         <h3 className="font-display mt-3 text-3xl text-ink">{category.name}</h3>
         <p className="mt-2 text-sm text-ink-muted">{category.tagline}</p>
         <p className="mt-4 text-xs uppercase tracking-[0.22em] text-gold">
-          {category.spells.length} spells →
+          {category.spells.length} {category.slug === "healing" ? "services" : "spells"} →
         </p>
       </div>
     </Link>
