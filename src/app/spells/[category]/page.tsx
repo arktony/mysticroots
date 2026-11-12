@@ -7,6 +7,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBand from "@/components/CtaBand";
 import Steps from "@/components/Steps";
 import { categories, getCategory } from "@/lib/spells";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, itemListLd, breadcrumbLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return categories.map((c) => ({ category: c.slug }));
@@ -18,7 +20,12 @@ export async function generateMetadata({
   const { category } = await params;
   const c = getCategory(category);
   if (!c) return {};
-  return { title: c.slug === "healing" ? c.name : `${c.name} Spells`, description: c.description };
+  return pageMeta({
+    title: c.slug === "healing" ? c.name : `${c.name} Spells`,
+    description: c.description,
+    path: `/spells/${c.slug}`,
+    image: c.image,
+  });
 }
 
 export default async function CategoryPage({ params }: PageProps<"/spells/[category]">) {
@@ -28,6 +35,12 @@ export default async function CategoryPage({ params }: PageProps<"/spells/[categ
 
   return (
     <>
+      <JsonLd
+        data={[
+          itemListLd(c.name, c.spells.map((s) => ({ name: s.name, path: `/spells/${c.slug}/${s.slug}/` }))),
+          breadcrumbLd([{ name: "Spells", path: "/spells" }, { name: c.name, path: `/spells/${c.slug}` }]),
+        ]}
+      />
       <PageHero
         eyebrow={`${c.symbol} ${c.name}`}
         title={c.tagline}

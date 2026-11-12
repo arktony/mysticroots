@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/Container";
 import CtaBand from "@/components/CtaBand";
 import HeroBackdrop from "@/components/HeroBackdrop";
 import { site } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { personLd, breadcrumbLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: `About ${site.caster.name}`,
   description: `Meet ${site.caster.name}, ${site.caster.title.toLowerCase()} at Mystic Roots Healing, and learn the values behind every casting.`,
-};
+  path: "/about",
+  image: "/images/caster-candles.jpg",
+});
 
 const values = [
   { t: "Honesty first", d: "You will be told plainly whether spell work can help, what it involves, and what it costs." },
@@ -21,6 +26,7 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={[personLd, breadcrumbLd([{ name: "About", path: "/about" }])]} />
       <section className="relative isolate overflow-hidden pt-36 pb-16 sm:pt-44">
         <HeroBackdrop image="/images/candle-tray.jpg" priority />
         <Container className="grid items-end gap-12 lg:grid-cols-12">

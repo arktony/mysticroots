@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import TestimonialCard from "@/components/TestimonialCard";
 import CtaBand from "@/components/CtaBand";
 import { testimonials } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Testimonials",
   description: "Words from clients of Mystic Roots Healing, shared with permission.",
-};
+  path: "/testimonials",
+  image: "/images/candles-glow.jpg",
+});
 
 export default function TestimonialsPage() {
   return (

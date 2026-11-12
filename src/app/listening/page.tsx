@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/Container";
@@ -6,12 +7,15 @@ import PageHero from "@/components/PageHero";
 import CtaBand from "@/components/CtaBand";
 import { WhatsAppIcon } from "@/components/Footer";
 import { site, whatsappLink } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { serviceLd, faqLd, breadcrumbLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "A Listening Ear",
-  description:
-    "Someone to talk to, in confidence. Private companion calls and chats with Elder Mafosa for anyone who is lonely, grieving or simply needs to be heard.",
-};
+  description: "Someone to talk to, in confidence. Private companion calls and chats with Elder Mafosa for anyone who is lonely, grieving or simply needs to be heard.",
+  path: "/listening",
+  image: "/images/listening-window.jpg",
+});
 
 const msg = "Hello, I would like to book a Listening Ear call.";
 
@@ -66,6 +70,19 @@ const faqs = [
 export default function ListeningPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          serviceLd({
+            name: "A Listening Ear",
+            description: metadata.description as string,
+            path: "/listening/",
+            image: "/images/listening-window.jpg",
+            category: "Companionship call",
+          }),
+          faqLd(faqs),
+          breadcrumbLd([{ name: "A Listening Ear", path: "/listening" }]),
+        ]}
+      />
       <PageHero
         eyebrow="A Listening Ear"
         title="Someone to talk to, in confidence."

@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import CategoryCard from "@/components/CategoryCard";
 import SpellCard from "@/components/SpellCard";
 import CtaBand from "@/components/CtaBand";
 import { categories } from "@/lib/spells";
+import JsonLd from "@/components/JsonLd";
+import { itemListLd, breadcrumbLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Spells",
-  description:
-    "Love, protection, money and success spells cast with traditional roots and prayer. Private consultations and distance casting worldwide.",
-};
+  description: "Love, protection, money and success spells cast with traditional roots and prayer. Private consultations and distance casting worldwide.",
+  path: "/spells",
+  image: "/images/candles-glow.jpg",
+});
 
 export default function SpellsPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          itemListLd("Services", categories.map((c) => ({ name: c.name, path: `/spells/${c.slug}/` }))),
+          breadcrumbLd([{ name: "Spells", path: "/spells" }]),
+        ]}
+      />
       <PageHero
         eyebrow="The spells"
         title="Eight paths. One honest conversation to begin."

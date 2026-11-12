@@ -5,12 +5,14 @@ import { posts } from "@/lib/content";
 
 export const dynamic = "force-static";
 
+const updated = new Date("2026-11-12");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const statics = ["", "/spells", "/listening", "/how-it-works", "/about", "/testimonials", "/faq", "/blog", "/contact", "/terms", "/privacy"];
   return [
-    ...statics.map((p) => ({ url: `${site.url}${p}`, changeFrequency: "monthly" as const, priority: p === "" ? 1 : 0.8 })),
-    ...categories.map((c) => ({ url: `${site.url}/spells/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.8 })),
-    ...allSpells.map((s) => ({ url: `${site.url}/spells/${s.category.slug}/${s.slug}`, changeFrequency: "monthly" as const, priority: 0.7 })),
-    ...posts.map((p) => ({ url: `${site.url}/blog/${p.slug}`, lastModified: p.date, changeFrequency: "yearly" as const, priority: 0.5 })),
+    ...statics.map((p) => ({ url: `${site.url}${p}/`.replace(/\/\/$/, "/"), lastModified: updated, changeFrequency: "monthly" as const, priority: p === "" ? 1 : 0.8 })),
+    ...categories.map((c) => ({ url: `${site.url}/spells/${c.slug}/`, lastModified: updated, changeFrequency: "monthly" as const, priority: 0.8 })),
+    ...allSpells.map((s) => ({ url: `${site.url}/spells/${s.category.slug}/${s.slug}/`, lastModified: updated, changeFrequency: "monthly" as const, priority: 0.7 })),
+    ...posts.map((p) => ({ url: `${site.url}/blog/${p.slug}/`, lastModified: p.date, changeFrequency: "yearly" as const, priority: 0.5 })),
   ];
 }

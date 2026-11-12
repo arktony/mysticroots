@@ -10,6 +10,8 @@ import HeroBackdrop from "@/components/HeroBackdrop";
 import { WhatsAppIcon } from "@/components/Footer";
 import { allSpells, getCategory, getSpell } from "@/lib/spells";
 import { site, whatsappLink } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, serviceLd, breadcrumbLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return allSpells.map((s) => ({ category: s.category.slug, spell: s.slug }));
@@ -21,7 +23,12 @@ export async function generateMetadata({
   const { category, spell } = await params;
   const s = getSpell(category, spell);
   if (!s) return {};
-  return { title: s.name, description: s.short, openGraph: { images: [s.image] } };
+  return pageMeta({
+    title: `${s.name} | ${getCategory(category)?.name}`,
+    description: `${s.short} ${s.intro}`.slice(0, 160),
+    path: `/spells/${category}/${spell}`,
+    image: s.image,
+  });
 }
 
 export default async function SpellPage({ params }: PageProps<"/spells/[category]/[spell]">) {
@@ -34,6 +41,22 @@ export default async function SpellPage({ params }: PageProps<"/spells/[category
 
   return (
     <>
+      <JsonLd
+        data={[
+          serviceLd({
+            name: s.name,
+            description: s.intro,
+            path: `/spells/${c.slug}/${s.slug}/`,
+            image: s.image,
+            category: c.name,
+          }),
+          breadcrumbLd([
+            { name: "Spells", path: "/spells" },
+            { name: c.name, path: `/spells/${c.slug}` },
+            { name: s.name, path: `/spells/${c.slug}/${s.slug}` },
+          ]),
+        ]}
+      />
       <section className="relative isolate overflow-hidden pt-32 pb-16 sm:pt-40">
         <HeroBackdrop image={s.image} priority />
         <Container>

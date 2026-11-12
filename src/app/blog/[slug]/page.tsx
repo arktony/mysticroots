@@ -5,6 +5,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBand from "@/components/CtaBand";
 import HeroBackdrop from "@/components/HeroBackdrop";
 import { getPost, posts } from "@/lib/content";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, articleLd, breadcrumbLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -14,7 +16,7 @@ export async function generateMetadata({ params }: PageProps<"/blog/[slug]">): P
   const { slug } = await params;
   const p = getPost(slug);
   if (!p) return {};
-  return { title: p.title, description: p.excerpt, openGraph: { images: [p.image] } };
+  return pageMeta({ title: p.title, description: p.excerpt, path: `/blog/${p.slug}`, image: p.image, type: "article" });
 }
 
 export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
@@ -24,6 +26,7 @@ export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
 
   return (
     <>
+      <JsonLd data={[articleLd(p), breadcrumbLd([{ name: "Blog", path: "/blog" }, { name: p.title, path: `/blog/${p.slug}` }])]} />
       <section className="relative isolate overflow-hidden pt-32 pb-16 sm:pt-40">
         <HeroBackdrop image={p.image} priority />
         <Container className="max-w-3xl">

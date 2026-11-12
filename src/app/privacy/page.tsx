@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import LegalPage, { type LegalSection } from "@/components/LegalPage";
 import { site } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Privacy Policy",
   description: "How Mystic Roots Healing collects, uses, stores and protects the personal information you share with us.",
-};
+  path: "/privacy",
+  image: "/images/candles-black.jpg",
+});
 
 const sections: LegalSection[] = [
   {

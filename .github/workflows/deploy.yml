@@ -39,3 +39,18 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Tell Bing, Yandex and other IndexNow search engines about every URL after each deploy.
+  # Google does not support IndexNow; it reads the sitemap through Search Console instead.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          sleep 60
+          SITEMAP=$(curl -sf https://mysticrootshealing.org/sitemap.xml)
+          URLS=$(echo "$SITEMAP" | grep -o '<loc>[^<]*</loc>' | sed 's/<\/\?loc>//g' | jq -R . | jq -s .)
+          BODY=$(jq -n --arg host mysticrootshealing.org --arg key "d642866b6d4b8e7eb9313c9aa4f48a46" --arg keyLocation "https://mysticrootshealing.org/d642866b6d4b8e7eb9313c9aa4f48a46.txt" --argjson urlList "$URLS" '{host:$host,key:$key,keyLocation:$keyLocation,urlList:$urlList}')
+          curl -s -o /dev/null -w 'IndexNow HTTP %{http_code}\n' -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json; charset=utf-8' -d "$BODY"

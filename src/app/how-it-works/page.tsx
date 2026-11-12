@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Image from "next/image";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
@@ -6,11 +7,12 @@ import CtaBand from "@/components/CtaBand";
 import FaqList from "@/components/FaqList";
 import { steps } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "How It Works",
-  description:
-    "From your first message to the casting and follow-up: how a private consultation and distance spell casting works at Mystic Roots Healing.",
-};
+  description: "From your first message to the casting and follow-up: how a private consultation and distance spell casting works at Mystic Roots Healing.",
+  path: "/how-it-works",
+  image: "/images/tarot-palo-santo.jpg",
+});
 
 export default function HowItWorksPage() {
   return (

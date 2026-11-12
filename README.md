@@ -23,3 +23,11 @@ Open http://localhost:3000.
 ## Deploy
 
 Any Next.js host works. Vercel: import the GitHub repo and deploy with defaults.
+
+## SEO and indexing
+
+- Every page sets a canonical URL, Open Graph and Twitter cards through `pageMeta()` in `src/lib/seo.ts`.
+- Structured data (JSON-LD) is emitted per page: WebSite and Organization on every page, LocalBusiness and FAQ on the home page, Service on each spell page, ItemList on category pages, FAQPage on the FAQ, BlogPosting on posts, Person on About, BreadcrumbList where relevant.
+- `sitemap.xml` and `robots.txt` are generated from the data files.
+- After each deploy, the `indexnow` workflow job submits every sitemap URL to IndexNow (Bing, Yandex and partners). The key file lives in `public/`.
+- Google does not use IndexNow. Verify the site once in Google Search Console, paste the code into `site.verification.google` in `src/lib/site.ts`, and submit `https://mysticrootshealing.org/sitemap.xml`. Bing Webmaster Tools can import the property from Search Console.

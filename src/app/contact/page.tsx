@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 import { WhatsAppIcon } from "@/components/Footer";
 import { site, whatsappLink } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Contact",
   description: "Reach Mystic Roots Healing on WhatsApp, by phone or through the private contact form.",
-};
+  path: "/contact",
+  image: "/images/crystal-purple.jpg",
+});
 
 export default function ContactPage() {
   return (

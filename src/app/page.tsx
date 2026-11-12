@@ -11,6 +11,9 @@ import CtaBand from "@/components/CtaBand";
 import { WhatsAppIcon } from "@/components/Footer";
 import HeroBackdrop from "@/components/HeroBackdrop";
 import ListeningCard from "@/components/ListeningCard";
+import JsonLd from "@/components/JsonLd";
+import { localBusinessLd, faqLd } from "@/lib/seo";
+import { faqs } from "@/lib/content";
 import { categories, featuredSpells } from "@/lib/spells";
 import { testimonials } from "@/lib/content";
 import { site, whatsappLink } from "@/lib/site";
@@ -18,6 +21,7 @@ import { site, whatsappLink } from "@/lib/site";
 export default function Home() {
   return (
     <>
+      <JsonLd data={[localBusinessLd, faqLd(faqs.slice(0, 5))]} />
       {/* Hero */}
       <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pt-24">
         <Image

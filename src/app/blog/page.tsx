@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/Container";
@@ -6,10 +7,12 @@ import PageHero from "@/components/PageHero";
 import CtaBand from "@/components/CtaBand";
 import { posts } from "@/lib/content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Blog",
   description: "Guidance on spell work, protection, timing and tradition from Mystic Roots Healing.",
-};
+  path: "/blog",
+  image: "/images/cards-candle.jpg",
+});
 
 export default function BlogPage() {
   return (

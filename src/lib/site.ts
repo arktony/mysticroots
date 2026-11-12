@@ -21,6 +21,11 @@ export const site = {
     email: "clientcare@mysticrootshealing.org",
     hours: "Available 7 days a week, 8am to 10pm EAT",
   },
+  // Paste the verification codes from Google Search Console and Bing Webmaster Tools here.
+  verification: {
+    google: "",
+    bing: "",
+  },
   social: {
     facebook: "#",
     instagram: "#",
