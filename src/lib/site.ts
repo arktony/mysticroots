@@ -6,7 +6,7 @@ export const site = {
   tagline: "Ancient spell casting, rooted in tradition.",
   description:
     "Mystic Roots Healing offers traditional spell casting for love, protection, prosperity and success. Private consultations, distance casting worldwide.",
-  url: "https://mysticrootshealing.com",
+  url: "https://mysticrootshealing.org",
   caster: {
     name: "Mama Zuri", // placeholder persona
     title: "Traditional Spell Caster & Spiritual Guide",
@@ -18,7 +18,7 @@ export const site = {
     whatsappDisplay: "+256 700 000 000",
     phone: "+256700000000",
     phoneDisplay: "+256 700 000 000",
-    email: "hello@mysticrootshealing.com", // placeholder
+    email: "clientcare@mysticrootshealing.org",
     hours: "Available 7 days a week, 8am to 10pm EAT",
   },
   social: {

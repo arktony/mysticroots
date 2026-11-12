@@ -3,6 +3,8 @@ import { site } from "@/lib/site";
 import { categories, allSpells } from "@/lib/spells";
 import { posts } from "@/lib/content";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const statics = ["", "/spells", "/how-it-works", "/about", "/testimonials", "/faq", "/blog", "/contact"];
   return [
