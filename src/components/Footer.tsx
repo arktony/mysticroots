@@ -69,9 +69,11 @@ export default function Footer() {
             This is not a substitute for medical, legal or financial advice. Services are for
             adults aged 18 and over.
           </p>
-          <p className="whitespace-nowrap">
-            © 2026 {site.name}. All rights reserved.
-          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 whitespace-nowrap">
+            <Link href="/terms" className="hover:text-gold-bright">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-gold-bright">Privacy Policy</Link>
+            <span>© 2026 {site.name}. All rights reserved.</span>
+          </div>
         </Container>
       </div>
     </footer>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { categories } from "@/lib/spells";
+import Link from "next/link";
 import { whatsappLink } from "@/lib/site";
 
 export default function ContactForm() {
@@ -52,7 +53,11 @@ export default function ContactForm() {
       <button type="submit" className="btn btn-gold mt-7 w-full sm:w-auto">
         Send via WhatsApp
       </button>
-      <p className="mt-4 text-xs text-ink-muted/80">By sending you confirm you are 18 or over.</p>
+      <p className="mt-4 text-xs text-ink-muted/80">
+        By sending you confirm you are 18 or over and agree to our{" "}
+        <Link href="/terms" className="underline hover:text-gold-bright">Terms of Service</Link> and{" "}
+        <Link href="/privacy" className="underline hover:text-gold-bright">Privacy Policy</Link>.
+      </p>
     </form>
   );
 }

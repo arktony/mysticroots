@@ -53,7 +53,7 @@ export const faqs = [
   },
   {
     q: "Is my information kept private?",
-    a: "Completely. Your name, situation and contact details are never shared, and testimonials appear only with permission and without identifying details.",
+    a: "Completely. Your name, situation and contact details are never shared, and testimonials appear only with permission and without identifying details. Our Privacy Policy, linked in the footer, explains exactly what we keep and for how long.",
   },
   {
     q: "What do I need to provide?",
