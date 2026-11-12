@@ -42,9 +42,12 @@ export default function ContactPage() {
           </a>
           <a href={`mailto:${site.contact.email}`} className="card flex items-center gap-5 p-6">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-gold/50 text-gold">✉</span>
-            <span>
+            <span className="min-w-0">
               <span className="eyebrow block">Email</span>
-              <span className="font-display block break-all text-2xl text-ink">{site.contact.email}</span>
+              <span className="font-display block text-lg leading-snug text-ink [overflow-wrap:anywhere] sm:text-xl">
+                {site.contact.email.split("@")[0]}@<wbr />
+                {site.contact.email.split("@")[1]}
+              </span>
             </span>
           </a>
           <div className="card p-6 text-sm leading-relaxed text-ink-muted">
