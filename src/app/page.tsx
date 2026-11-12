@@ -27,22 +27,23 @@ export default function Home() {
           sizes="100vw"
           className="-z-20 object-cover object-center"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bg via-bg/85 to-bg/30" />
+        <div className="absolute inset-0 -z-10 bg-bg/70" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(11,10,20,0.2),rgba(11,10,20,0.85)_75%)]" />
         <div className="absolute inset-x-0 bottom-0 -z-10 h-72 bg-gradient-to-t from-bg to-transparent" />
         <Container className="py-20">
-          <div className="max-w-2xl">
+          <div className="mx-auto max-w-3xl text-center">
             <p className="eyebrow rise mb-6">Traditional spell casting · Distance work worldwide</p>
             <h1 className="font-display rise rise-delay-1 text-5xl font-medium leading-[1.02] text-ink sm:text-6xl md:text-7xl lg:text-8xl">
               Where ancient roots
               <br />
               <span className="gold-text italic font-normal">meet your story.</span>
             </h1>
-            <p className="rise rise-delay-2 mt-7 max-w-xl text-lg leading-relaxed text-ink-muted">
+            <p className="rise rise-delay-2 mx-auto mt-7 max-w-xl text-lg leading-relaxed text-ink-muted">
               Love that has drifted. Luck that has turned. Shadows that follow you. For over{" "}
               {site.caster.experienceYears} years, {site.caster.name} has cast with the roots, herbs
               and prayers of tradition for people facing exactly what you face now.
             </p>
-            <div className="rise rise-delay-3 mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="rise rise-delay-3 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a href={whatsappLink()} target="_blank" rel="noopener" className="btn btn-whatsapp">
                 <WhatsAppIcon /> Private WhatsApp Consultation
               </a>
@@ -50,7 +51,7 @@ export default function Home() {
                 Explore the spells
               </Link>
             </div>
-            <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-xs uppercase tracking-[0.2em] text-ink-muted/80">
+            <ul className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.2em] text-ink-muted/80">
               <li className="flex items-center gap-2"><Dot /> Strictly confidential</li>
               <li className="flex items-center gap-2"><Dot /> Clear quote before work begins</li>
               <li className="flex items-center gap-2"><Dot /> Clients in 30+ countries</li>

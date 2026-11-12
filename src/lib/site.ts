@@ -8,7 +8,7 @@ export const site = {
     "Mystic Roots Healing offers traditional spell casting for love, protection, prosperity and success. Private consultations, distance casting worldwide.",
   url: "https://mysticrootshealing.org",
   caster: {
-    name: "Mama Zuri", // placeholder persona
+    name: "Elder Mafosa",
     title: "Traditional Spell Caster & Spiritual Guide",
     location: "Kampala, Uganda",
     experienceYears: 20, // placeholder, use a truthful number

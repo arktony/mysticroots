@@ -110,7 +110,8 @@ body {
 }
 .flicker { animation: flicker 3.5s ease-in-out infinite; }
 
-@keyframes rise { from { opacity: 0; transform: translateY(18px);} to { opacity: 1; transform: translateY(0);} }
+/* Movement only: text never depends on an animation frame to be visible. */
+@keyframes rise { from { transform: translateY(16px);} to { transform: translateY(0);} }
 .rise { animation: rise .9s ease-out both; }
 @media (prefers-reduced-motion: reduce) {
   .rise, .flicker { animation: none !important; opacity: 1; transform: none; }
