@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import JsonLd from "@/components/JsonLd";
+import PwaRegister from "@/components/PwaRegister";
+import InstallBanner from "@/components/InstallBanner";
 import { organizationLd, websiteLd } from "@/lib/seo";
 
 const cormorant = Cormorant_Garamond({
@@ -65,7 +67,21 @@ export const metadata: Metadata = {
     description: site.description,
     images: ["/images/hero-hand-candle.jpg"],
   },
-  icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/icon.svg",
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: site.shortName,
+    statusBarStyle: "black-translucent",
+  },
+  formatDetection: { telephone: true },
   verification: {
     google: site.verification.google || undefined,
     other: site.verification.bing ? { "msvalidate.01": site.verification.bing } : undefined,
@@ -76,6 +92,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: "#0b0a14",
   colorScheme: "dark",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -87,6 +104,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <InstallBanner />
+        <PwaRegister />
       </body>
     </html>
   );
