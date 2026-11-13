@@ -53,7 +53,7 @@ export default function ContactPage() {
           <div className="card p-6 text-sm leading-relaxed text-ink-muted">
             <p className="eyebrow mb-2">Hours & location</p>
             <p>{site.contact.hours}</p>
-            <p className="mt-1">{site.caster.location}. Distance consultations worldwide.</p>
+            <p className="mt-1">Distance consultations worldwide, by WhatsApp, phone or chat.</p>
           </div>
         </div>
         <div className="lg:col-span-7">

@@ -94,7 +94,7 @@ const sections: LegalSection[] = [
   {
     heading: "Governing law",
     paragraphs: [
-      `These terms are governed by the laws of Uganda. Any dispute will be handled first through honest conversation between us and, if that fails, by the courts of Uganda. If you live elsewhere, you may also have rights under the consumer laws of your own country, and nothing here takes those away.`,
+      "Any dispute will be handled first through honest conversation between us. If that fails, these terms are governed by the laws of the jurisdiction in which Mystic Roots Healing is established, and its courts will have authority. You may also have rights under the consumer laws of your own country, and nothing here takes those away.",
     ],
   },
   {

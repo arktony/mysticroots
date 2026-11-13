@@ -51,7 +51,6 @@ export default function Footer() {
         <div className="md:col-span-3">
           <h4 className="eyebrow mb-5">Contact</h4>
           <ul className="space-y-3 text-sm text-ink-muted">
-            <li>{site.caster.location}</li>
             <li>
               <a href={`tel:${site.contact.phone}`} className="hover:text-gold-bright">
                 {site.contact.phoneDisplay}

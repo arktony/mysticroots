@@ -37,8 +37,8 @@ export default function AboutPage() {
             </h1>
             <p className="mt-4 text-lg text-gold">{site.caster.title}</p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
-              Born into a family of healers in {site.caster.location.split(",")[0]}, and practising
-              for more than {site.caster.experienceYears} years for clients across the world.
+              Born into a family of healers, and practising for more than{" "}
+              {site.caster.experienceYears} years for clients across the world.
             </p>
           </div>
         </Container>

@@ -10,7 +10,7 @@ export const site = {
   caster: {
     name: "Elder Mafosa",
     title: "Traditional Spell Caster & Spiritual Guide",
-    location: "Kampala, Uganda",
+    location: "", // intentionally blank: the site does not state a base location
     experienceYears: 20, // placeholder, use a truthful number
   },
   contact: {
@@ -19,7 +19,7 @@ export const site = {
     phone: "+256758587822",
     phoneDisplay: "+256 758 587 822",
     email: "clientcare@mysticrootshealing.org",
-    hours: "Available 7 days a week, 8am to 10pm EAT",
+    hours: "Available 7 days a week. Replies within a few hours.",
   },
   // Paste the verification codes from Google Search Console and Bing Webmaster Tools here.
   verification: {

@@ -43,7 +43,6 @@ export const organizationLd = {
   logo: abs("/icon.svg"),
   email: site.contact.email,
   telephone: site.contact.phone,
-  address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
   contactPoint: [
     {
       "@type": "ContactPoint",
@@ -76,10 +75,8 @@ export const localBusinessLd = {
   image: abs("/images/hero-hand-candle.jpg"),
   telephone: site.contact.phone,
   email: site.contact.email,
-  address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
   areaServed: "Worldwide",
   priceRange: "$$",
-  openingHours: "Mo-Su 08:00-22:00",
   founder: { "@type": "Person", name: site.caster.name, jobTitle: site.caster.title },
   sameAs: Object.values(site.social).filter((u) => u && u !== "#"),
 };
@@ -90,11 +87,10 @@ export const personLd = {
   "@id": `${site.url}/about/#person`,
   name: site.caster.name,
   jobTitle: site.caster.title,
-  description: `${site.caster.title} with over ${site.caster.experienceYears} years of practice, based in ${site.caster.location}.`,
+  description: `${site.caster.title} with over ${site.caster.experienceYears} years of practice, serving clients worldwide.`,
   url: abs("/about/"),
   image: abs("/images/caster-candles.jpg"),
   worksFor: { "@id": `${site.url}/#organization` },
-  address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
 };
 
 export function breadcrumbLd(items: { name: string; path: string }[]) {

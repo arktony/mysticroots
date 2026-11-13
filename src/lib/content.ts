@@ -32,7 +32,7 @@ export const faqs = [
     a: "Spell casting is traditional spiritual work that uses roots, herbs, candles, prayer and intention to influence a situation. Every casting at Mystic Roots is prepared for one person and one situation. It is not a product off a shelf.",
   },
   {
-    q: "Can you help me if I live outside Uganda?",
+    q: "Can you help me if I live in another country?",
     a: "Yes. Most of our clients are abroad. Distance casting uses your name, date of birth and, where helpful, a photograph. Consultations happen over WhatsApp or phone, and you receive the same care as someone who visits in person.",
   },
   {
@@ -73,7 +73,7 @@ export const faqs = [
 export const testimonials = [
   {
     name: "Grace N.",
-    location: "Kampala",
+    location: "Houston, USA",
     spell: "Bring Back a Lost Lover",
     text: "After eight months of silence my husband called me first. We talked for two hours. I had almost given up hope and now we are rebuilding slowly. Thank you for your honesty and patience with me.",
   },
@@ -134,7 +134,7 @@ export const posts = [
     date: "2026-10-21",
     image: "/images/moon-clouds.jpg",
     body: [
-      "More than half of our clients live outside Uganda. Distance casting has been part of traditional practice for as long as people have travelled, and the method is simple.",
+      "Most of our clients live in other countries and never meet us in person. Distance casting has been part of traditional practice for as long as people have travelled, and the method is simple.",
       "## How it works",
       "You share your full name, date of birth, and the names of the people central to your situation. For some work a photograph helps. We hold a consultation by WhatsApp or phone, then the casting is done here, at the right phase of the moon, exactly as it would be if you were present.",
       "## What you will feel",

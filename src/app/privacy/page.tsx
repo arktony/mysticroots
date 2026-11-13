@@ -15,7 +15,7 @@ const sections: LegalSection[] = [
     heading: "Our promise",
     paragraphs: [
       "People come to us with the most private matters of their lives. Protecting that trust is part of the work. This policy explains what information we collect, why, how long we keep it, and the choices you have. It applies to this website and to every consultation and Service we provide.",
-      `The person responsible for your information is ${site.name}, ${site.caster.location}, reachable at ${site.contact.email}.`,
+      `The person responsible for your information is ${site.name}, reachable at ${site.contact.email}.`,
     ],
   },
   {
@@ -91,7 +91,7 @@ const sections: LegalSection[] = [
       "Ask us to correct anything that is wrong.",
       "Ask us to delete your information. We will do so unless the law requires us to keep part of it, such as payment records.",
       "Withdraw your consent to our use of sensitive information at any time.",
-      "Complain to the data protection authority in your country if you believe we have handled your information badly. In Uganda that is the Personal Data Protection Office.",
+      "Complain to the data protection authority in your country if you believe we have handled your information badly.",
     ],
   },
   {
@@ -103,7 +103,7 @@ const sections: LegalSection[] = [
   {
     heading: "International clients",
     paragraphs: [
-      `Most of our clients live outside Uganda. By contacting us you understand that your information will be received and handled in Uganda, where data protection law may differ from your own country's. We apply the protections in this policy to every client regardless of where they live.`,
+      "We serve clients in many countries. By contacting us you understand that your information may be handled in a country other than your own, where data protection law may differ. We apply the protections in this policy to every client regardless of where they live.",
     ],
   },
   {
