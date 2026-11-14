@@ -14,10 +14,10 @@ export const site = {
     experienceYears: 20, // placeholder, use a truthful number
   },
   contact: {
-    whatsapp: "+256755094617",
-    whatsappDisplay: "+256 755 094 617",
-    phone: "+256755094617",
-    phoneDisplay: "+256 755 094 617",
+    whatsapp: "+256785789142",
+    whatsappDisplay: "+256 785 789 142",
+    phone: "+256785789142",
+    phoneDisplay: "+256 785 789 142",
     email: "clientcare@mysticrootshealing.org",
     hours: "Available 7 days a week. Replies within a few hours.",
   },

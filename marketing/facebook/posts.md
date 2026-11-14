@@ -17,7 +17,7 @@ Some burdens have no test result and no paperwork. A heaviness you cannot explai
 
 We work in the old way: traditional healing, herbal remedies, spiritual cleansing, ancestral guidance and spiritual work for love, family, protection and the seasons of life. Every consultation is private, every quote is clear before anything begins, and distance work means you can be anywhere in the world.
 
-💬 WhatsApp +256 755 094 617
+💬 WhatsApp +256 785 789 142
 🌐 mysticrootshealing.org
 
 Adults 18+. Traditional spiritual services. Results vary and are not a substitute for medical, legal or financial advice.
@@ -34,7 +34,7 @@ A Listening Ear is a private call or chat with no judgement and no rush. Talk ab
 
 It is not therapy and not a crisis line. It is company, in confidence.
 
-💬 WhatsApp +256 755 094 617 · 🌐 mysticrootshealing.org/listening
+💬 WhatsApp +256 785 789 142 · 🌐 mysticrootshealing.org/listening
 
 Adults 18+.
 
@@ -50,7 +50,7 @@ We prepare traditional herbal remedies the way they were handed down, for rest, 
 
 Remedies support wellbeing. They are not a diagnosis or a treatment, and you should keep any medicine your doctor has prescribed.
 
-💬 WhatsApp +256 755 094 617 · 🌐 mysticrootshealing.org
+💬 WhatsApp +256 785 789 142 · 🌐 mysticrootshealing.org
 
 Adults 18+.
 
@@ -66,7 +66,7 @@ Grief, stress and years of carrying other people leave a residue on the spirit. 
 
 Most people feel the difference the same day. If you are starting a new chapter, moving into a new home or simply tired in a way sleep does not fix, this is where to begin.
 
-💬 WhatsApp +256 755 094 617 · 🌐 mysticrootshealing.org
+💬 WhatsApp +256 785 789 142 · 🌐 mysticrootshealing.org
 
 Adults 18+. Results vary.
 
@@ -101,7 +101,7 @@ Bad company, drink, drugs, disrespect, silence. We sit with parents privately, l
 
 You are not failing. You are asking for help, which is what strong parents do.
 
-💬 WhatsApp +256 755 094 617 · 🌐 mysticrootshealing.org/spells/family
+💬 WhatsApp +256 785 789 142 · 🌐 mysticrootshealing.org/spells/family
 
 Adults 18+.
 
@@ -121,7 +121,7 @@ Here is how a consultation with us goes:
 
 We never guarantee an outcome, because no honest practitioner can. We never ask for passwords, PINs or gift cards. We never share your story with anyone.
 
-💬 WhatsApp +256 755 094 617 · 🌐 mysticrootshealing.org/how-it-works
+💬 WhatsApp +256 785 789 142 · 🌐 mysticrootshealing.org/how-it-works
 
 Adults 18+.
 
@@ -137,7 +137,7 @@ Recurring dreams, dreams of those who have passed, water, snakes, falling, being
 
 Send us the dream in as much detail as you remember. A reading tells you what it means and whether anything needs to be done.
 
-💬 WhatsApp +256 755 094 617 · 🌐 mysticrootshealing.org/spells/healing
+💬 WhatsApp +256 785 789 142 · 🌐 mysticrootshealing.org/spells/healing
 
 Adults 18+.
 
